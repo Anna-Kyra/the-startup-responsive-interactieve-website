@@ -74,7 +74,7 @@ header {
     }
 
 
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
     & a {
         & svg {
             width: 90px;
