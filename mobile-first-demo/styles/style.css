@@ -120,12 +120,12 @@ footer{
 }
 .shadow{
    box-shadow: var(--shadow) var(--shadow);
-  }
+}
 
   /* MEDIA QUERIES */
 @media (min-width: 45rem){
    body{
-      /* background: pink; */
+      background: pink;
    }
    #gedragscriteria, #leertaken{
       display: inline-block;

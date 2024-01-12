@@ -1,0 +1,138 @@
+@font-face {
+    font-family: Suisse Int;
+    src: url(lettertypes/SuisseIntl-Light-WebS.woff2) format("woff2");
+    font-weight: 300;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: Suisse Int;
+    src: url(lettertypes/SuisseIntl-Regular-WebS.woff2) format("woff2");
+    font-weight: 400;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: Suisse Int;
+    src: url(lettertypes/SuisseIntl-Medium-WebS.woff2) format("woff2");
+    font-weight: 500;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: Bw Gradual;
+    src: url(lettertypes/BwGradual-ExtraBold.woff2) format("woff2");
+    font-weight: 800;
+    font-style:normal;
+}
+
+:root {
+    --theme-bg-color: #fff;
+    --theme-text-color: #091c0c;
+    --theme-block-bg-color: #eef0ea;
+    --theme-line-color: #daddda;
+}
+
+*, :after, :before, html {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--theme-bg-color);
+    color: var(--theme-text-color);
+    transition:background-color .25s ease-in-out;
+    width: 100%;
+
+    font-family: Suisse Int, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height:1.35;
+}
+
+
+
+header {
+    /* height: 75px; */
+
+    /* align-content: space-between; */
+    width: 100%;
+    & div {
+        
+        display: flex;
+        align-content: space-between;
+        width: 100%;
+
+        & button {
+            align-self: flex-end;
+        }
+    }
+
+
+    background-color: rebeccapurple;
+    & a {
+        & svg {
+            width: 90px;
+        }
+    }
+
+}
+
+h2 {
+    font-family: Bw Gradual,Georgia,Times New Roman,serif;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-size: 1.875rem;
+    line-height: 1.1;
+}
+
+.styles_hamburger__YOcdE {
+    width: 100%;
+    transition: color .25s ease-in-out;
+}
+
+.styles_menu-overlay-toggle__7qOc7 {
+    background: transparent;
+    cursor: pointer;
+    line-height: 1.1;
+    text-align: center;
+    text-decoration: none;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.875rem;
+    padding: 0;
+    color: currentColor;
+}
+
+
+/* BREAKPOINT 1 */
+@media (min-width:45em) {}
+
+/* BREAKPOINT 2 */
+@media (min-width: 75em) {}
+
+
+@media (min-width: 60rem) {
+    body {
+        font-size: 1.25rem;
+        line-height:1.5;
+    }
+}
+
+@media (min-width: 80rem) {
+    body {
+        font-size:1.375rem;
+    }
+}
