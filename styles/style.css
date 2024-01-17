@@ -306,8 +306,6 @@ header {
                 width: calc(50% - .25em);
             }
 
-
-            
             & a {
                 display: block;
                 padding: 1em .5em;
@@ -336,9 +334,6 @@ header {
                     align-items:center;
                 }
             }
-
-            
-            
         }
     }
 
@@ -352,7 +347,7 @@ header {
 }
 
 .browse {
-    position: relative;
+    
 
     & div {
         display: flex;
@@ -362,6 +357,57 @@ header {
         & ul {
             display: flex;
             margin-bottom: 0.5em;
+
+
+        }
+
+        & .nav_browse {
+            position: fixed; 
+            bottom: 0;
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 1em;
+            margin: 0 -1em;
+
+            width: 100%;
+            z-index: 100;
+
+            font-family: Bw Gradual,Georgia,Times New Roman,serif;
+            /* font-weight: 800; */
+
+            background-color: #0A1C0D;
+            color: var(--theme-bg-color);
+
+            font-size: 1.2rem;
+            border-radius: 30px 30px 0 0;
+
+            & button {
+                width: 60px;
+                height: 50px;
+
+
+    
+                border-radius: 30px;
+                background-color: var(--theme-bg-color);
+                border: none;
+
+                &:first-child {
+                    & svg {
+                        rotate: 180deg;
+                    }
+                }
+    
+                & svg {
+                    height: 20px;
+                    color: var(--theme-text-color);
+
+                    
+                    /* border: 1px solid var(--theme-text-color); */
+                }
+            }
         }
     }
 
@@ -370,6 +416,8 @@ header {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: .5em;
+
+
         
     }
 
@@ -382,23 +430,15 @@ header {
     
     & a {
         text-decoration:none
-    }
 
-    & .nav_browse {
-        position: fixed;
-        & button {
-            width: 60px;
-            height: 50px;
-
-            border-radius: 100px;
-            background-color: transparent;
-            border: 1px solid var(--theme-text-color);
-
-            & svg {
-                width: 30px;
-            }
+        & img {
+            /* object-fit: fill; */
+            width: 100%;
+            height: 500px;
         }
     }
+
+
 }
 
 footer {
