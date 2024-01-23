@@ -162,8 +162,6 @@ time {
     display: none;
 }
 
-
-
 /* .height_null {
     height: 0;
     margin: 0;
@@ -603,8 +601,6 @@ footer {
             grid-template-columns: 1fr 1fr 1fr;
         }
     }
-
-
 
     h1 {
         font-size:6.375rem
