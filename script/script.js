@@ -13,6 +13,7 @@ function more() {
         element.classList.toggle('hidden')
     })
     newArticles.classList.toggle('new_ul')
+    newArticles.classList.toggle('not')
 
     rotateSVG.forEach((element) => {
         if(element.style.rotate === '-90deg') {
@@ -32,3 +33,4 @@ function more() {
     // newArticles.classList.toggle('hidden')
     console.log('yo')
 }
+
